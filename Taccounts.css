@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9f5;  
+}
+
+.navbar {
+    background-color: #8FB76D;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: 160px;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8FB76D; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+    list-style-type: square; /* Remove default bullets for dropdown */
+    color: white;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+.dropdown a:hover {
+    color: black;
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+
+/*T-Accounts*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}

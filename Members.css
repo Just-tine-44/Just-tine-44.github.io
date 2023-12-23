@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9f5;  
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #8FB76D;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: 160px;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8FB76D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+    list-style-type: square; /* Remove default bullets for dropdown */
+    color: white;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+.dropdown a:hover {
+    color: black;
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+
+/*Picture Members*/
+.team-members {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.member-image {
+    margin-top: 65%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.member-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.member-name {
+    font-weight: bold;
+}

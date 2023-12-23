@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9f5; 
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color:#8FB76D;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+.navbar {
+    background-color: #8FB76D; 
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8FB76D; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+    list-style-type: square; /* Remove default bullets for dropdown */
+    color: white;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+.dropdown a:hover {
+    color: black;
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+
+.balance-sheet {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid #574c4c;
+    padding: 12px;
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1, h2 , h3{
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+}
+
+/* Style for alternating row colors */
+tr:nth-child(even) {
+    background-color: #f5f5f5; /* Light gray shade */
+}
+
+tr:nth-child(odd) {
+    background-color: #e0e0e0; /* Slightly darker gray shade */
+}
+/* Hover effect for rows */
+tr:hover {
+    background-color: #ccc8c8;
+}

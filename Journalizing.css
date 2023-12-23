@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9f5;
+}
+.navbar {
+    background-color: #8FB76D;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+.navbar {
+    background-color: #8FB76D; 
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8FB76D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+    list-style-type: square; /* Remove default bullets for dropdown */
+    color: white;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+.dropdown a:hover {
+    color: black; 
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 25px;
+}
+td.f1{
+    text-align:left;
+    padding-left: 100px;
+}
+td.f2{
+    text-align: left;
+    padding-left: 250px;
+}
+tr.c1{
+    background-color: #3498db;
+}
+tr.c2{
+    background-color: lightcyan;
+}
+tr.c3{
+    background-color: lightgoldenrodyellow;
+}
+tr.c4{
+    background-color: lightgray;
+}
+tr.c5{
+    background-color: lightgreen;
+}
+tr.c5{
+    background-color: lightpink;
+}
+tr.c6{
+    background-color: lightsalmon;
+}
+tr.c7{
+    background-color: lightseagreen;
+}
+tr.c8{
+    background-color: lightskyblue;
+}
+tr.c9{
+    background-color: lightslategray;
+}
+tr.c10{
+    background-color: lightsteelblue;
+}
+tr.c11{
+    background-color: darkcyan;
+}
+tr.c12{
+    background-color: greenyellow;
+}
+tr.c13{
+    background-color: burlywood;
+}
+tr.c14{
+    background-color: goldenrod;
+}
+tr.c15{
+    background-color: yellowgreen;
+}
+tr.c16{
+    background-color: blueviolet;
+}
+

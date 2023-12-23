@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9f5;  
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+.navbar {
+    background-color: #8FB76D; 
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8FB76D; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+    list-style-type: square; /* Remove default bullets for dropdown */
+    color: white;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+.dropdown a:hover {
+    color: black; 
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+table {
+    border-collapse: collapse;
+    width: 70%; /* Adjusted width for better responsiveness */
+    margin: 20px auto; /* Center the table */
+    margin-bottom: 40px;
+}
+
+th, td {
+    border: 3px solid #2c3e50; /* Darker border color */
+    padding: 10px; /* Increased padding for better spacing */
+    text-align: left;
+    font-size: 14px; /* Increased font size for better readability */
+}
+td:nth-child(2), td:nth-child(3) {
+    text-align: center; /* Center the class section text */
+}
+td.section{
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+td.section:hover{
+    background-color:lightgrey;
+    color: black;
+}
+th {
+    background-color: #2c3e50; /* Dark background for headers */
+    color: white;
+    text-align: center;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #3498db; /* Light blue on hover */
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h1, .Title h1 {
+    font-size: 25px;
+    margin: 0 auto;
+}
+.section{
+    margin-left: 50px;
+}
